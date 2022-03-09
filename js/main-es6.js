@@ -17,29 +17,18 @@ let typedBefore = false;
     function toggleMenu(){
 
         if (expanded) {
-
             menu.style.height = 0;
-
             expanded = false;
-
             console.log(nav);
-
             nav.classList.remove('black');
-
             toggle.classList.remove('cross');
-
             return;
 
         }
-
         let height = wrap.offsetHeight;
-
         nav.classList.add('black');
-
         toggle.classList.add('cross');
-
         menu.style.height = (height+10)+'px';
-
         expanded = true;
 
     }
@@ -47,35 +36,26 @@ let typedBefore = false;
 
 
     toggle.addEventListener('click', toggleMenu);
-
-
-
     links.forEach((link) =>{
-
         link.addEventListener('click', toggleMenu)
-
     });
 
     window.addEventListener('scroll', () => {
 
         if (window.pageYOffset > 0) {
-
             nav.classList.add('scrolled');
-
         }
 
         else {
-
             nav.classList.remove('scrolled');
-
         }
 
     });
+
     if (window.pageYOffset > 0) {
-
         nav.classList.add('scrolled');
-
     }
+
 })();
 
 
@@ -101,27 +81,22 @@ let typedBefore = false;
     }));
 
 })();
+
 function getOffset(elem)
-
 {
-
     let offset = 0;
-
     do {
 
         if ( !isNaN( elem.offsetTop) )
-
         {
-
             offset += elem.offsetTop;
-
         }
-
     } while( elem = elem.offsetParent );
 
     return offset;
 
 }
+
 function scrollTo(position, time) {
     let delta =  position - window.pageYOffset;
     let chank = delta / time * 10;
@@ -196,7 +171,6 @@ function scrollTo(position, time) {
     function slide(i) {
         slider_inner.style.transform = `translateX(-${item.offsetWidth * i}px)`;
         //console.log(item.offsetWidth);
-
     }
 
     let interval = setInterval(() =>{

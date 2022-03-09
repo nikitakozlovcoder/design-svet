@@ -616,6 +616,10 @@ textarea {
 .expand-img {
   cursor: pointer; }
 
+.inverse-wrap {
+  margin-left: -10px;
+  margin-right: -10px; }
+
 img {
   width: 100%;
   height: auto; }
@@ -1001,7 +1005,7 @@ footer {
 .docs {
   padding: 80px 0; }
   .docs .docs_col {
-    padding: 0 20px; }
+    padding: 0 10px; }
 
 .docs_cols {
   overflow: hidden;
@@ -1079,7 +1083,7 @@ footer {
     flex-wrap: wrap; }
   .docs_col {
     flex-basis: 50%; }
-  .docs_cols .wrap {
+  .docs_cols .docs-wrap {
     display: flex;
     flex-wrap: wrap; }
   body {
